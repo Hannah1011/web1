@@ -1,0 +1,90 @@
+<!-- ctrl+o  하면 웹에서 폴더 열 수 있음.-->
+<!doctype html>   <!--이 문서는 HTML이라는 것을 알려주는 태그임-->
+<html>    <!--제일 고위층 태그라고 봐주면 됨. </html>로 닫아야된다는점!-->
+ <body>   <!--본문을 body태그로 묶어주기로 약속함.-->
+ <h1><a href="index.html"> WEB PROJECT1</a> </h1>  <!--(22.6.29)a href 는 다른 웹페이지로 연결해주기 위해서 넣은 것35,36,37번 코드도.-->
+ <h2> HTML이란 무엇인가?</h2> <!--이렇게만 했을 경우 글이 깨지는 것을 알 수 있음.UTF-8로 열으라고 명령해줘야함.-->
+ <meta charset="utf-8">  <!--문서를 utf-8로 읽으라고 명령해준것임.-->
+ <!-- <h1>-<h6>요소는 6단계의 구획 제목을 나타냄.즉, 숫자가 올라갈수록 점점 글씨가 작아짐. 그리고 자동으로 줄바꿈됨.-->
+ <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="HTML5specification">Hypertext Markup language(HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.<br> Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. <p style="margin-top:40px;">HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages.</p> With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.<br> It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+ <!-- 배운 태그(Tag)는 두개!!-> strong: 굵게  u: 밑줄 쳐짐-->
+ <!--줄바꿈 Tag <br> :한줄씩 띄어줌.  그리고 이친구는 열리는 태만 있음. -->
+ <!-- paragraphs Tag 는 열리는 태그, 닫는 태그 둘 다 있음. // 한 단락을 표현 해줌. 위에 밑에 빈 줄을 생성해줌.-->
+ <!-- style: HTML속성을 나타내줌. style="margin-top:40px;": 태그와 태그 사이의 여백 위 상단은 40픽셀만큼 띄어주기-->
+ <!--검색엔진은 제목이 코딩인 사이트부터 노출해줌.-->
+
+ <!--속성(attribute) 개념. 태그의 연장선 느낌(심화 버전)-->
+ <!--이미지를 넣고 싶을 때 image의 줄임말인 <img> 태그를 사용하면 됨. Unsplash라는 사이트에서는 고화질 좋은 사진들 다운로드 가능.-->
+ Hypertext Markup language(HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.<br> Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages.<img src="coding1.jpg" width="450">
+ <!--img scr="": ""여기에 그림 이름 써주면 그림으로 나타남!그대신 그림이 폴더 안에 있어야함!그리고 이미지의 너비를 조정하고 싶을 때는 width='픽셀'을 앞이나 뒤에 붙여주면 됨.-->
+ <p style="margin-top:40px;">HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages.</p> With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.<br> It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+<p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/9GkFI1ovBbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+ <!-- HTML은 부모태그와 자식태그가 있음. list작성할 때는 두개지만 표(table)작성할 때는 3 태그가 같이 나옴-->
+ <!--목차를 쓸 때 줄바꿈해주고 싶다면 <br>을 쓰는게 아니라 list의 앞 글자 두개인 li를 따와서 <li></li>를 써줘야 함. -->
+ <h2>Our class process</h2>
+ <!--<li>태그는 반드시 부모 태그<ul>를 가지고 있다. -->
+ <ul>    <!--unordered list의 약자-->
+   <li>1. HTML </li>
+    <li>2. CSS</li>
+    <li>3. JavaScript</li>
+ </ul> 
+ <!--<ul>: <li>의 목록들이 다른 목록들과 구분 될 수 있도록 경계 역할을 해줌.-->
+ <!--만약에 1,2,3,... 1억개가 있다면..??-->
+ <ol>       <!--ordered list의 약자-->
+    <li><a href="1.html">HTML</a> </li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>    
+ </ol>
+
+
+
+
+
+
+
+<p>
+
+
+ <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-ix3lddu16n.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+ </body>
+
+
+ <!--빈도수가 가장 높은 태그 5가지: <head>, <body>, <html>, <title>, <meta> -->
+ <!--본문은 body로 묶어주기로 약속함.(위에 해줌.) 그리고 body를 설명해주는 큰 분류는 head로 묶어주기로 약속함. -->
+ <head>  <!--원래 이부분이 <body></body>위에 와야함!-->
+ <title> WEB1-html </title>  <!--title을 써주면 검색엔진에서도 위로 뜨게됨. 우와 여기에다가 써도 위로 뜸.-->
+ <meta charset="utf-8">  <!--문서를 utf-8로 읽으라고 명령해준것임.-->
+ </head>
+
+
+ </html>
+
+<!-- hypertext(링크)가 바로 이 태그를 의미함. 태그의 이름은 <a>: anchor의 약자. : 정보의 바다에 정박한다는 의미.-->
+<!--9번째 줄 참고하기:href(hypertext reference)를 뜻함/// target="_blank": 새로운 창을 띄워줌./// title="HTML5specification" :클릭하기 전에 이 링크가 무엇인지 알려주고 싶을 때(ex)HTML5specification이라는 것을 알려주기 위해)-->
+
+<!--22.6.29: 오늘은 website를 완성하려고 한다. 웹페이지들의 그룹을 의미한다. 링크들을 연결하려고 함! -->
+<!--Internet 과 Web의 차이점: Internet안에 Web이라는 부분이 존재한다.-->
+<!-- 인터넷은 1960년에 출현하여 발전해왔다. 1990년에 웹이 출현하면서 인터넷이 각광받음. -->
+<!--웹의 메소포타미아: info.cern.ch-->
